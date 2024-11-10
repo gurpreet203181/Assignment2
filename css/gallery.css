@@ -1,0 +1,62 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#gallery {
+    width: 80%;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0;
+}
+
+
+
+#gallery img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+figcaption {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+#thumbnailList {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 20px 0;
+}
+
+#thumbnailList li {
+    margin: 0 10px;
+}
+
+#thumbnailList img {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+#thumbnailList img:hover {
+    transform: scale(1.1);
+}
+
+#thumbnailList img.active {
+    filter: grayscale(0%);
+}
+
+
